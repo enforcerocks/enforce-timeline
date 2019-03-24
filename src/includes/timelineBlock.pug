@@ -1,0 +1,8 @@
+mixin block(image, header, content, date)
+  div(class='cd-timeline__block is-cd-block')
+    div(class='cd-timeline__img cd-timeline__img--picture js-cd-img')
+      img(src=image alt='Timeline picture')
+    div(class='cd-timeline__content js-cd-content')
+      h2= header
+      p= content
+      span(class='cd-timeline__date')= date
